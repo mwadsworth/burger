@@ -2,6 +2,7 @@
 var mysql = require("mysql");
 var connection;
 
+
 if (process.env.JAWSDB_URL) {
   connection = my.createConnection(process.env.JAWSDB_URL);
 } else {
@@ -10,7 +11,7 @@ if (process.env.JAWSDB_URL) {
     port: 3306,
     user: 'root',
     password: 'yourRootPassword',
-    database: 'burgers_db'
+    database: 'burger_db'
   });
 };
 
